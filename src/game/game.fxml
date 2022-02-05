@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="749.0" style="-fx-background-color: #66faf7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.HangmanController">
+   <children>
+      <TextField fx:id="guess" layoutX="318.0" layoutY="84.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button layoutX="599.0" layoutY="84.0" mnemonicParsing="false" onAction="#getTextInput" prefHeight="25.0" prefWidth="124.0" text="Enter" />
+      <Text fx:id="textForWord" layoutX="318.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="click enter to start" wrappingWidth="189.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="hangmanTextArea" layoutX="30.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Calisto MT" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="endOfGameText" layoutX="225.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="334.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="playAgainButton" layoutX="359.0" layoutY="257.0" mnemonicParsing="false" onAction="#reset" text="Play again" />
+      <Text fx:id="hangmanTitel" layoutX="288.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hanghero">
+         <font>
+            <Font name="Calisto MT" size="50.0" />
+         </font>
+      </Text>
+      <Text fx:id="livesLeftText" layoutX="30.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess letter: " wrappingWidth="235.353515625">
+         <font>
+            <Font name="Calisto MT" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberLivesLeft" fill="RED" layoutX="494.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="12.0">
+         <font>
+            <Font name="Calisto MT" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="stick1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="561.0" layoutY="481.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <Rectangle fx:id="stick2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="250.0" layoutX="708.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="11.0" />
+      <Rectangle fx:id="stick3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="619.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle fx:id="rope" arcHeight="5.0" arcWidth="5.0" fill="#946303" height="29.0" layoutX="622.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="11.0" />
+      <Circle fx:id="head" fill="#fc0000" layoutX="628.0" layoutY="298.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="body" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="621.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" width="11.0" />
+      <Rectangle fx:id="Rhand1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="47.0" layoutX="609.0" layoutY="317.0" rotate="25.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle fx:id="Lhand1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="47.0" layoutX="640.0" layoutY="317.0" rotate="-27.6" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle fx:id="RL1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="619.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle fx:id="LL1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="630.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Circle fx:id="Rhand2" layoutX="599.0" layoutY="363.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Lhand2" layoutX="656.0" layoutY="362.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="RL" layoutX="622.0" layoutY="448.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="LL2" layoutX="633.0" layoutY="448.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="hangmanTitel1" fill="RED" layoutX="217.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="write my name to save me, my name is ....... *faints*">
+         <font>
+            <Font name="Calisto MT Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
